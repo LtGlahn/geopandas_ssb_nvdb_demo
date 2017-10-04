@@ -2,15 +2,15 @@
 
 Demo av hvordan geopandas kan brukes med data fra [Nasjonal vegdatabank](https://www.vegvesen.no/fag/teknologi/Nasjonal+vegdatabank) (NVDB) og [Statistisk Sentralbyrå](http://www.ssb.no/natur-og-miljo/geodata) (SSB). 
 
-Vi ønsker å finne hvilke turistveger som går gjennom hvilke sentrumsområder - og hvilke trafikkulykker som er registrert der. 
+Vi ønsker å finne hvilke turistveger som går gjennom hvilke tettsteder - og hvilke trafikkulykker som er registrert der. 
 
 Gangen er som følger: 
-1. Last ned data over sentrumsområder fra [SSB](http://www.ssb.no/natur-og-miljo/geodata
+1. Last ned data over tettsteder fra [SSB](http://www.ssb.no/natur-og-miljo/geodata
 1. Last ned turistveger fra [NVDB api](https://www.vegvesen.no/nvdb/apidokumentasjon/)
-1. Finn snittet av turistveger og sentrumsområder (hvilke turistveger som går gjennom hvilke sentrumsområder)
-1. Finn trafikkulykkene på turistvegene som går gjennom sentrumsområder. 
-    1. Finn BoundingBox for hvert av sentrumsområdene 
-    1. Hent trafikkulykker innenfor BBox. M
+1. Finn snittet av turistveger og tettsteder (hvilke turistveger som går gjennom hvilke tettsteder)
+1. Finn trafikkulykkene på turistvegene som går gjennom tettsteder. 
+    1. Finn BoundingBox for hvert av tettstedene 
+    1. Hent trafikkulykker innenfor BBox. 
     1. Finn trafikkulykkene som ligger på turistvegens senterlinje
         1. Alternativt finn trafikkulykkene innenfor radius fra turistvegen. 
 1. Lag fine plott og sånn
@@ -27,7 +27,7 @@ Disse python-bibliotekene:
 * For nedlasting fra SSB (kan være like greit å laste ned manuelt?) 
     * requests (også påkrevd for ```nvdapi.py```)
     * shutil 
-* _sikkert noen flere_ 
+* *work in progress*, mere kommer.
 * ```nvdbapi.py``` og ```nvdb2geojson.py``` fra [NVDBapi-v2 reposet](https://github.com/LtGlahn/nvdbapi-V2)
 
 Koden finnes både som kjørbare python-script og som jupyter notebook _(Geopandas-nvdb-eksempel.ipynb)_. 
