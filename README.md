@@ -19,6 +19,15 @@ Gangen er som følger:
 
 Anbefaling - Anaconda distribusjon på din plattform (testet på linux og windows). 
 
+Disse python-bibliotekene: 
+
+* Shapely
+* Pandas
+* Geopandas
+
+
+```nvdbapi.py``` og ```nvdb2geojson.py``` fra [dette reposet](https://github.com/LtGlahn/nvdbapi-V2)
+
 Koden finnes både som python-script og som jupyter notebook. 
 
 ## De kule tingene kan være vrient på Windows
