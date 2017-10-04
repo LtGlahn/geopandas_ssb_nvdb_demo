@@ -24,6 +24,9 @@ Disse python-bibliotekene:
 * Shapely
 * Pandas
 * Geopandas
+* For nedlasting fra SSB (kan være like greit å laste ned manuelt?) 
+    * requests (også påkrevd for ```nvdapi.py```)
+    * shutil 
 * _sikkert noen flere_ 
 * ```nvdbapi.py``` og ```nvdb2geojson.py``` fra [NVDBapi-v2 reposet](https://github.com/LtGlahn/nvdbapi-V2)
 
