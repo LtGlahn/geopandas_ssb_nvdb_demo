@@ -59,3 +59,5 @@ target/
 # Repo scratch directory
 scratch/
 
+# Ignore shapefiles from SSB
+Tettsted2016/
