@@ -1,4 +1,26 @@
 
+# Installasjon
+
+Anbefaling - Anaconda distribusjon på din plattform (testet på linux og windows). 
+
+Disse python-bibliotekene: 
+
+* Shapely
+* Pandas
+* Geopandas
+* For nedlasting fra SSB (kan være like greit å laste ned manuelt?) 
+    * requests (også påkrevd for ```nvdapi.py```)
+    * shutil 
+* *work in progress*, mere kommer.
+* ```nvdbapi.py``` og ```nvdb2geojson.py``` fra [NVDBapi-v2 reposet](https://github.com/LtGlahn/nvdbapi-V2)
+
+Koden finnes både som kjørbare python-script og som jupyter notebook _(Geopandas-nvdb-eksempel.ipynb)_. 
+
+## De kule tingene kan være vrient på Windows
+
+Litt om hvordan man får tak i Geopandas og øvrige bibliotek på Windows-plattform. 
+
+
 
 ## Linux med anaconda
 
