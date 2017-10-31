@@ -63,4 +63,4 @@ scratch/
 Tettsted2016/
 
 #Ignore credentials
-nvdbapi-clientinfo.json
+# nvdbapi-clientinfo.json
