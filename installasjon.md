@@ -1,53 +1,44 @@
+# Windows-brukere - hent fram anaconda prompt
 
-# Installasjon
+Last ned og installer siste [Anaconda versjon](https://www.anaconda.com/download) for python 3.6 eller høyere. 
 
-Anbefaling - Anaconda distribusjon på din plattform (testet på linux og windows). 
+Start **anaconda prompt** : Start -> Alle programmer -> Anaconda 3 -> Anaconda prompt. 
 
-Disse python-bibliotekene: 
+![Finn anaconda prompt i start meny](figures/finn-anaconda-prompt.png "Finn anaconda prompt i start meny")
 
-* Shapely
-* Pandas
-* Geopandas
-* For nedlasting fra SSB (kan være like greit å laste ned manuelt?) 
-    * requests (også påkrevd for ```nvdapi.py```)
-    * shutil 
-* *work in progress*, mere kommer.
-* ```nvdbapi.py``` og ```nvdb2geojson.py``` fra [NVDBapi-v2 reposet](https://github.com/LtGlahn/nvdbapi-V2)
+Dette er en windows kommandolinje med litt utvidede funksjoner. Du bruker **anaconda prompt** til å kjøre kommandoene for å installere de bibliotekene som trengs.  
 
-Koden finnes både som kjørbare python-script og som jupyter notebook _(Geopandas-nvdb-eksempel.ipynb)_. 
+### Føy til bibliotekene som trengs
 
-## De kule tingene kan være vrient på Windows
+Linux-brukere kjører dette i et vanlig shell, windows brukere henter fram **anaconda prompt** 
 
-Litt om hvordan man får tak i Geopandas og øvrige bibliotek på Windows-plattform. 
-
-
-
-## Linux med anaconda
-
-Last ned siste [Anaconda versjon](https://www.anaconda.com/download/#linux) for python 3.6 eller høyere, installer med ```bash Anaconda*.sh```- [Mer detaljert oppskrift](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-16-04). 
-
-* Geopandas: Kluss med inkompatibilitet mellom hva Geopandas trenger og det som brukes default. 
-  * ```conda config --add channels conda-forge``` (gir conda-forge høyest prioritet)
-  * ```conda install -c conda-forge geopandas``` [Dokumentasjon](http://geopandas.org/install.html#installing-geopandas)
-* Geojson ```conda install -c ioos geojson``` [Dokumentasjon](https://pypi.python.org/pypi/geojson)
-
-## Linux uten anaconda
-
-Antagelsen her er at du har python3 installert, men at din standard pythoninstallasjon er python 2.7.
-
-* [Geopandas](http://geopandas.org/) ```pip3 install geopandas```
-* [Geojson](https://pypi.python.org/pypi/geojson) ```pip3 install geojson```
-
-Denne oppskriften er prøvd på [pythonanywhere](https://pythonanywhere.com). Med betalkonto ($5/mnd) har du tilgang til notebook. 
-
-## Windows 
-
-Last ned og installer siste [Anaconda versjon](https://www.anaconda.com/download) for python 3.6 eller høyere. Kjør installasjonen. 
-
-**Todo: Skriv om bruk av windows-oppfinnelsen _anaconda prompt_ **
-
-# Funker på SSM-linux
-  
+```
 conda install -c conda-forge geopandas
 conda install -c conda-forge geojson
 conda install -c conda-forge mplleaflet
+```
+
+Mange anbefaler også å lage 
+[virituelle anaconda-miljøer](https://conda.io/docs/user-guide/tasks/manage-environments.html) 
+der man installerer det som trengs til en type oppgaver. Da minimerer du 
+risikoen for at et bibliotek henten fra ett sted slår i hjel noe annet du 
+er avhengig av. _Jeg har vært litt plundrete uheldig med mine forsøk i den retning 
+(notisboka fant ikke bibliotekene i det virituelle miljøet), men oppdaterer 
+gjerne når jeg finner en mer skuddsikker oppskrift._
+
+# Surr film!
+
+Reposet finner du her: https://github.com/LtGlahn/geopandas_ssb_nvdb_demo. 
+Den mest elegante oppskriften er jo å bruke git i kommandolinjen:  
+
+```git clone https://github.com/LtGlahn/geopandas_ssb_nvdb_demo```
+
+Eller du kan laste ned denne [zip-fila](https://github.com/LtGlahn/geopandas_ssb_nvdb_demo/archive/master.zip) og pakke ut et passende sted. 
+
+Start notebook, naviger til riktig mappe og åpne et av ```.ipynb``` - eksemplene. Velg "Cell -> Run all"
+
+Notebook kan startes på en av flere måter: 
+* Fra anaconda prompt (eller linux shell): ```jupyter notebook```
+* Fra anaconda navigator
+* Fra programmenyen (Start -> Alle programmer -> Anaconda3 -> Jupyter notebook)
+

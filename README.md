@@ -7,3 +7,9 @@ Vi ønsker å finne hvilke turistveger som går gjennom hvilke tettsteder - og h
 ## Kom i gang 
 
 [Installasjon](installasjon.md) 
+
+# Screenshots
+
+![Skjermdump jupyter notebook](figures/notebook-screenshot.png "Dataanalyse i Jupyter notebook")
+
+![Skjermdump enkle kart](figures/kartskjermdump.png "Visst kan du lage enkle kart!")
