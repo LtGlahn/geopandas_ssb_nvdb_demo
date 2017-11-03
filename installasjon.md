@@ -37,8 +37,8 @@ Eller du kan laste ned denne [zip-fila](https://github.com/LtGlahn/geopandas_ssb
 
 Start notebook, naviger til riktig mappe og åpne et av ```.ipynb``` - eksemplene. Velg "Cell -> Run all"
 
-Notebook kan startes på en av flere måter: 
+Notebook kan startes på flere måter: 
 * Fra anaconda prompt (eller linux shell): ```jupyter notebook```
-* Fra anaconda navigator
+* Fra anaconda navigator 
 * Fra programmenyen (Start -> Alle programmer -> Anaconda3 -> Jupyter notebook)
 
