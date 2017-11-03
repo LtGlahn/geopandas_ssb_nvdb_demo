@@ -45,3 +45,9 @@ Denne oppskriften er prøvd på [pythonanywhere](https://pythonanywhere.com). Me
 Last ned og installer siste [Anaconda versjon](https://www.anaconda.com/download) for python 3.6 eller høyere. Kjør installasjonen. 
 
 **Todo: Skriv om bruk av windows-oppfinnelsen _anaconda prompt_ **
+
+# Funker på SSM-linux
+  
+conda install -c conda-forge geopandas
+conda install -c conda-forge geojson
+conda install -c conda-forge mplleaflet
